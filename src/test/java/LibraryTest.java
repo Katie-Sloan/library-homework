@@ -63,4 +63,15 @@ public class LibraryTest {
         assertEquals(true, library.stockCheck());
     }
 
+    @Test
+    public void checkIfStockIsFullFalse(){
+        library.add(book1);
+        library.add(book2);
+        library.add(book3);
+        library.add(book4);
+        assertEquals(false, library.stockCheck());
+    }
+
+
+
 }
