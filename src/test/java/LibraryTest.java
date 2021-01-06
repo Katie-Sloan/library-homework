@@ -79,6 +79,4 @@ public class LibraryTest {
         library.remove(book2);
         assertEquals(1, library.bookCount());
     }
-
-
 }
