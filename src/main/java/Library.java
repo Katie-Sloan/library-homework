@@ -23,4 +23,8 @@ public class Library {
     public int getCapacity() {
         return this.capacity;
     }
+
+    public boolean stockCheck() {
+        return this.bookCount() >= this.capacity;
+    }
 }

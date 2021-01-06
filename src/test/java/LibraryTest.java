@@ -53,4 +53,14 @@ public class LibraryTest {
         assertEquals(5, library.bookCount());
     }
 
+    @Test
+    public void checkIfStockIsFullTrue(){
+        library.add(book1);
+        library.add(book2);
+        library.add(book3);
+        library.add(book4);
+        library.add(book5);
+        assertEquals(true, library.stockCheck());
+    }
+
 }
