@@ -14,4 +14,11 @@ public class Borrower {
     public int bookCount() {
         return this.borrowedBooks.size();
     }
+
+    public void borrowBook(Book book, Library library) {
+        if (library.getCapacity() > 0){
+            this.borrowedBooks.add(book);
+            library.remove(book);
+        }
+    }
 }

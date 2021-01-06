@@ -27,4 +27,8 @@ public class Library {
     public boolean stockCheck() {
         return this.bookCount() >= this.capacity;
     }
+
+    public void remove(Book book) {
+        this.collection.remove(book);
+    }
 }
